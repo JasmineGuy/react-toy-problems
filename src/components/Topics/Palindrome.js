@@ -14,7 +14,7 @@ class Palindrome extends Component{
     
     const handleChange = (value)=> {
         this.setState({userInput: value})
-        console.log('value:', value)
+        // console.log('value:', value)
     }
 
     const checkPalindrome = (props) => {
@@ -23,11 +23,11 @@ class Palindrome extends Component{
         let flip =reverse.reverse()
         let joined = flip.join('')
         
-        console.log(forward, joined)
+        // console.log(forward, joined)
         if(joined === forward){
-            this.setState({palindrome: true})
+            this.setState({palindrome: 'true'})
         } else {
-            this.setState({palindrome: false})
+            this.setState({palindrome: 'false'})
         }
     }
 
